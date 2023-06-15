@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "doacaoapp",
+    "slug": "doacaoapp",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
