@@ -258,15 +258,13 @@ export default App = () => {
           {/*<Button title="Apagar Tabela" onPress={() => apagarTabela()} />*/}
           {/*<Button title="Listar Usuários" onPress={() => listarUsuarios()} />*/}
           <Button title="tabela doação" onPress={() => mostrarTabela()} />
-          
-          <Modal visible={modalVisible} transparent={true} onRequestClose={esconderTabela}>
+        </View>
+        <Modal visible={modalVisible} transparent={true} onRequestClose={esconderTabela}>
             <View style={styles.modalContainer}>
               <Button title="Fechar" onPress={esconderTabela} />
-              <Image source={require("")} style={styles.modalImage} />
+              <Image source={require("./tabelaModal.png")} style={styles.modalImage} />
             </View>
           </Modal>
-          
-        </View>
         <View style={styles.container}>
           <TextInput
             placeholder="Entre com o Nome"
@@ -352,8 +350,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
   },
   modalImage: {
-    width: 200,
-    height: 200,
+    width: 300,
+    height: 300,
     resizeMode: 'contain',
   },
 });
